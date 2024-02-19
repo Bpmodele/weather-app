@@ -1,2 +1,58 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            class="search-input"
+            id="search-input"
+            required
+          />
+          <input type="submit" value="Search" class="submit-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">New York City</h1>
+            <p class="current-details">
+              <span id="current-date"></span>, cloudy <br />Humidity:
+              <strong>70%,</strong> Wind:<strong>2mph</strong>
+            </p>
+          </div>
+          <div class="current-temp">
+            <span class="current-temp-icon">☀️</span>
+            <span class="current-temp-value" id="current-temperature">39</span>
+            <span class="current-temp-unit">°F</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by<a href="" target=""> Madali Navas</a> and
+          is<a href="" target=""> on GitHub</a> and
+          <a href="" target=""> hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
+
